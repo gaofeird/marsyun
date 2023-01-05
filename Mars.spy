@@ -28,25 +28,6 @@ js_config:
   Wait: 2
 - Container:
   - []
-  Env: computer_activityId
-  KeyWord:
-  - - computer_activityId
-  Name: 【云上】电脑配件
-  OverdueTime: 600
-  Script: jd_computer.js
-  TimeOut: 0
-  Wait: 5
-- Container:
-  - []
-  Env: jd_fxyl_activityId
-  KeyWord:
-  - - jd_fxyl_activityId
-  Name: 【云上】分享有礼
-  Script: jd_share.js
-  TimeOut: 0
-  Wait: 2
-- Container:
-  - []
   Env: jd_cjhy_activityId
   KeyWord:
   - - jd_cjhy_activityId
@@ -63,24 +44,6 @@ js_config:
   Script: jd_zdjr.js
   TimeOut: 0
   Wait: 5
-- Container:
-  - []
-  Env: PKC_TXGZYL
-  KeyWord:
-  - - PKC_TXGZYL
-  Name: 【PKC】关注有礼-特效
-  Script: jd_txgzyl.js
-  TimeOut: 0
-  Wait: 2
-- Container:
-  - []
-  Env: PKC_GZYL
-  KeyWord:
-  - - PKC_GZYL
-  Name: 【PKC】关注有礼
-  Script: pkc_gzyl.js
-  TimeOut: 0
-  Wait: 2
 - Container:
   - []
   Env: jd_wxCollectCard_activityId
