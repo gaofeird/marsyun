@@ -211,7 +211,7 @@ js_config:
   Script: jd_lzkjInteract.py
   TimeOut: 0
   Wait: 2
-  - Container:
+- Container:
   - []
   Env: LUCK_DRAW_URL
   KeyWord:
@@ -220,7 +220,7 @@ js_config:
   Script: jd_luck_draw.js
   TimeOut: 0
   Wait: 5
-  - Container:
+- Container:
   - []
   Env: jd_lottery_activityUrl
   KeyWord:
@@ -229,7 +229,7 @@ js_config:
   Script: jd_lottery.js
   TimeOut: 0
   Wait: 5
-  - Container:
+- Container:
   - []
   Env: jd_wxShareActivity_activityId
   KeyWord:
@@ -238,7 +238,7 @@ js_config:
   Script: jd_wxShareActivity.js
   TimeOut: 0
   Wait: 5
-  - Container:
+- Container:
   - []
   Env: jd_drawCenter_activityId
   KeyWord:
@@ -247,7 +247,7 @@ js_config:
   Script: jd_drawCenter.js
   TimeOut: 0
   Wait: 5
-  - Container:
+- Container:
   - []
   Env: jd_wxFansInterActionActivity_activityId
   KeyWord:
@@ -256,7 +256,7 @@ js_config:
   Script: jd_wxFansInterActionActivity.js
   TimeOut: 0
   Wait: 5
-  - Container:
+- Container:
   - []
   Env: jd_wxBuildActivity_activityId
   KeyWord:
@@ -265,7 +265,7 @@ js_config:
   Script: jd_wxBuildActivity.js
   TimeOut: 0
   Wait: 5 
-  - Container:
+- Container:
   - []
   Env: jd_cjhy_activityId
   Env: jd_cjhy_activityUrl
@@ -276,7 +276,7 @@ js_config:
   Script: jd_cjzdgf.js
   TimeOut: 0
   Wait: 5 
-  - Container:
+- Container:
   - []
   Env: jd_wxCartKoi_activityId
   KeyWord:
@@ -285,7 +285,7 @@ js_config:
   Script: jd_wxCartKoi.js
   TimeOut: 0
   Wait: 5 
-  - Container:
+- Container:
   - []
   Env: jd_zdjr_activityId
   KeyWord:
@@ -294,7 +294,7 @@ js_config:
   Script: jd_zdjr.js
   TimeOut: 0
   Wait: 5
-  - Container:
+- Container:
   - []
   Env: jd_wxSecond_activityId
   KeyWord:
@@ -303,7 +303,7 @@ js_config:
   Script: jd_wxSecond.js
   TimeOut: 0
   Wait: 5
-  - Container:
+- Container:
   - []
   Env: jd_wxgame_activityId
   KeyWord:
@@ -312,7 +312,7 @@ js_config:
   Script: jd_wxgame.js
   TimeOut: 0
   Wait: 5
-  - Container:
+- Container:
   - []
   Env: jd_wxCollectCard_activityId
   KeyWord:
@@ -321,7 +321,7 @@ js_config:
   Script: jd_wxCollectCard.js
   TimeOut: 0
   Wait: 5
-  - Container:
+- Container:
   - []
   Env: jd_wxCollectionActivity_activityUrl
   KeyWord:
@@ -330,7 +330,7 @@ js_config:
   Script: jd_wxCollectionActivity.js
   TimeOut: 0
   Wait: 5  
-  - Container:
+- Container:
   - []
   Env: jd_completeInfoActivity_activityId
   Env: jd_completeInfoActivity_venderId
@@ -341,7 +341,7 @@ js_config:
   Script: jd_completeInfoActivity.js
   TimeOut: 0
   Wait: 5  
-  - Container:
+- Container:
   - []
   Env: jd_wxShopFollowActivity_activityUrl
   KeyWord:
