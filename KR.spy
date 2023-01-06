@@ -220,7 +220,7 @@ js_config:
   Env: jd_drawCenter_activityId
   KeyWord:
   - - jd_drawCenter_activityId
-  Name: 【KR】LZ刮刮乐抽奖
+  Name: 【KR】店铺抽奖中心 · 超级无线
   OverdueTime: 3600
   Script: jd_drawCenter.js
   TimeOut: 0
