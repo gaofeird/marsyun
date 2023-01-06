@@ -1,0 +1,685 @@
+js_config:
+- Container:
+  - []
+  Disable: 1
+  Env: jd_wxCartKoi_activityId
+  KeyWord:
+  - - jd_wxCartKoi_activityId
+  Name: 【KR】购物车锦鲤通用活动
+  OverdueTime: 3600
+  Script: jd_wxCartKoi.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Disable: 0
+  Env: jd_cjhy_wxCollectionActivityId
+  KeyWord:
+  - - jd_cjhy_wxCollectionActivityId
+  Name: 【环境】cjhy加购物车抽奖
+  OverdueTime: 3600
+  Script: jd_cjhy_wxCollectionActivity.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Disable: 0
+  Env: jd_lzkj_wxCollectionActivityId
+  KeyWord:
+  - - jd_lzkj_wxCollectionActivityId
+  Name: 【环境】lzkj加购物车抽奖
+  OverdueTime: 3600
+  Script: jd_lzkj_wxCollectionActivity.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Disable: 0
+  Env: jd_cjhy_wxDrawActivity_Id
+  KeyWord:
+  - - jd_cjhy_wxDrawActivity_Id
+  Name: 【环境】cjhy幸运抽大奖通用活动
+  OverdueTime: 3600
+  Script: jd_cjhy_wxDrawActivity.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Disable: 0
+  Env: jd_lzkj_wxDrawActivity_Id
+  KeyWord:
+  - - jd_lzkj_wxDrawActivity_Id
+  Name: 【环境】lzkj幸运抽大奖通用活动
+  OverdueTime: 3600
+  Script: jd_lzkj_wxDrawActivity.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: JD_Lottery
+  KeyWord:
+  - - JD_Lottery
+  Name: 【KR】京东抽奖机通用
+  OverdueTime: 3600
+  Script: jd_lottery.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Disable: 1
+  Env: jd_wxCollectCard_activityId
+  KeyWord:
+  - - jd_wxCollectCard_activityId
+  Name: 【KR】集卡抽奖通用活动
+  OverdueTime: 3600
+  Script: jd_wxCollectCard.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_wxShopFollowActivity_activityId
+  KeyWord:
+  - - jd_wxShopFollowActivity_activityId
+  - - jd_wxShopFollowActivity_activityUrl
+  Name: 【KR】LZ关注抽奖通用活动
+  OverdueTime: 3600
+  RegularRules: '@[\d|a-z]{32}@0'
+  Script: jd_wxShopFollowActivity.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_wxUnPackingActivity_activityId
+  KeyWord:
+  - - jd_wxUnPackingActivity_activityId
+  Name: 【KR】LZ让福袋飞
+  OverdueTime: 3600
+  Script: jd_wxUnPackingActivity.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_wxFansInterActionActivity_activityId
+  KeyWord:
+  - - jd_wxFansInterActionActivity_activityId
+  Name: 【KR】粉丝互动通用活动
+  OverdueTime: 3600
+  Script: jd_wxFansInterActionActivity.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Disable: 0
+  Env: jd_cjhy_activityId
+  KeyWord:
+  - - jd_cjhy_activityId
+  - - jd_task_cjzlzd_custom
+  Name: 【KR】CJ组队瓜分京豆
+  OverdueTime: 3600
+  Script: jd_cjzdgf.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_zdjr_activityId
+  KeyWord:
+  - - jd_zdjr_activityId
+  Name: 【KR】LZ组队瓜分京豆
+  OverdueTime: 3600
+  Script: jd_zdjr.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Disable: 0
+  Env: jd_wdz_activityId
+  KeyWord:
+  - - jd_wdz_activityId
+  Name: 【KR】微定制瓜分京豆
+  OverdueTime: 3600
+  Script: jd_wdz.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Disable: 0
+  Env: jd_wdzfd_activityId
+  KeyWord:
+  - - jd_wdzfd_activityId
+  Name: 【KR】微定制瓜分福袋
+  Script: jd_wdzfd.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Disable: 0
+  Env: yhyauthorCode
+  KeyWord:
+  - - yhyauthorCode
+  - - jd_inv_authorCode
+  - - prodevactCode
+  - - prodev_code
+  - - jd_invite_id
+  Name: 【KR】邀请赢大礼
+  OverdueTime: 3600
+  Script: KingRan_KR/jd_prodev.py
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Disable: 0
+  Env: VENDER_ID
+  KeyWord:
+  - - VENDER_ID
+  Name: 【KR】入会开卡领取礼包
+  OverdueTime: 3600
+  Script: KingRan_KR/jd_OpenCard_Force.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Disable: 0
+  Env: M_WX_ADD_CART_URL
+  KeyWord:
+  - - M_WX_ADD_CART_URL
+  - - jd_wxCollectionActivity_activityUrl
+  - - jd_wxCollectionActivityUrl
+  Name: 【M】加购有礼
+  OverdueTime: 3600
+  Script: m_jd_wx_addCart.js
+  TimeOut: 300
+  Wait: 3
+- Container:
+  - []
+  Disable: 0
+  Env: M_FAV_SHOP_ARGV
+  KeyWord:
+  - - M_FAV_SHOP_ARGV
+  Name: 【M】收藏有礼
+  OverdueTime: 3600
+  Script: m_jd_fav_shop_gift.js
+  TimeOut: 300
+  Wait: 3
+- Container:
+  - []
+  Disable: 0
+  Env: M_WX_CENTER_DRAW_URL
+  KeyWord:
+  - - M_WX_CENTER_DRAW_URL
+  Name: 【M】老虎机抽奖
+  OverdueTime: 3600
+  Script: m_jd_wx_centerDraw.js
+  TimeOut: 300
+  Wait: 3
+- Container:
+  - []
+  Disable: 0
+  Env: M_FOLLOW_SHOP_ARGV
+  KeyWord:
+  - - M_FOLLOW_SHOP_ARGV
+  Name: 【M】关注有礼
+  OverdueTime: 3600
+  Script: m_jd_follow_shop.js
+  TimeOut: 300
+  Wait: 3
+- Container:
+  - []
+  Disable: 1
+  Env: M_WX_COLLECT_CARD_URL
+  KeyWord:
+  - - M_WX_COLLECT_CARD_URL
+  Name: 【M】集卡抽奖
+  Script: m_jd_wx_collectCard.js
+  TimeOut: 0
+  Wait: 3
+- Container:
+  - []
+  Disable: 0
+  Env: M_WX_LUCK_DRAW_URL
+  KeyWord:
+  - - M_WX_LUCK_DRAW_URL
+  - - LUCK_DRAW_URL
+  Name: 【M】幸运抽奖
+  OverdueTime: 3600
+  Script: m_jd_wx_luckDraw.js
+  TimeOut: 180
+  Wait: 5
+- Container:
+  - []
+  Disable: 0
+  Env: M_WX_FOLLOW_DRAW_URL
+  KeyWord:
+  - - M_WX_FOLLOW_DRAW_URL
+  Name: 【M】关注抽奖
+  OverdueTime: 3600
+  Script: m_jd_wx_followDraw.js
+  TimeOut: 300
+  Wait: 3
+- Container:
+  - []
+  Disable: 0
+  Env: M_WX_SHOP_GIFT_URL
+  KeyWord:
+  - - M_WX_SHOP_GIFT_URL
+  Name: 【M】关注有礼无线
+  OverdueTime: 3600
+  Script: m_jd_wx_shopGift.js
+  TimeOut: 300
+  Wait: 3
+- Container:
+  - []
+  Disable: 0
+  Env: M_WX_BUILD_DRAW_URL
+  KeyWord:
+  - - M_WX_BUILD_DRAW_URL
+  Name: 【M】盖楼领奖
+  OverdueTime: 3600
+  Script: m_jd_wx_buildDraw.js
+  TimeOut: 300
+  Wait: 3
+- Container:
+  - []
+  Disable: 0
+  Env: M_WX_SECOND_DRAW_URL
+  KeyWord:
+  - - M_WX_SECOND_DRAW_URL
+  Name: 【M】读秒手速
+  OverdueTime: 3600
+  Script: m_jd_wx_secondDraw.js
+  TimeOut: 0
+  Wait: 3
+- Container:
+  - []
+  Disable: 0
+  Env: M_WX_LEVEL_BIRTH_URL
+  KeyWord:
+  - - M_WX_LEVEL_BIRTH_URL
+  Name: 【M】等级/生日礼包
+  OverdueTime: 3600
+  Script: m_jd_wx_levelBirth.js
+  TimeOut: 0
+  Wait: 3
+- Container:
+  - []
+  Disable: 0
+  Env: M_FANS_RED_PACKET_URL
+  KeyWord:
+  - - M_FANS_RED_PACKET_URL
+  Name: 【M】粉丝红包
+  OverdueTime: 300
+  Script: walle1798_WALL.E/m_jd_fans_redPackt.js
+  TimeOut: 3600
+  Wait: 3
+- Container:
+  - []
+  Disable: 0
+  Env: M_WX_DADOUDOU_URL
+  KeyWord:
+  - - M_WX_DADOUDOU_URL
+  Name: 【M】打豆豆
+  OverdueTime: 300
+  Script: walle1798_WALL.E/m_jd_wx_dadoudou.js
+  TimeOut: 0
+  Wait: 3
+- Container:
+  - []
+  Disable: 0
+  Env: M_WX_GAME_URL
+  KeyWord:
+  - - M_WX_GAME_URL
+  Name: 【M】无线游戏
+  OverdueTime: 300
+  Script: walle1798_WALL.E/m_jd_wx_game.js
+  TimeOut: 0
+  Wait: 3
+- Container:
+  - []
+  Disable: 0
+  Env: M_WX_SHARE_URL
+  KeyWord:
+  - - M_WX_SHARE_URL
+  Name: 【M】分享有礼
+  OverdueTime: 300
+  Script: walle1798_WALL.E/m_jd_wx_share.js
+  TimeOut: 0
+  Wait: 3
+- Container:
+  - []
+  Disable: 0
+  Env: M_WX_TEAM_URL
+  KeyWord:
+  - - M_WX_TEAM_URL
+  Name: 【M】M组队瓜分
+  OverdueTime: 300
+  Script: walle1798_WALL.E/m_jd_wx_team.js
+  TimeOut: 0
+  Wait: 3
+- Container:
+  - []
+  Disable: 0
+  Env: jd_wxShareActivity_activityId
+  KeyWord:
+  - - jd_fxyl_activityId
+  - - SHARE_ACTIVITY_ID
+  - - jd_wxShareActivity_activityId
+  Name: 【KR】LZ分享有礼
+  OverdueTime: 3600
+  Script: jd_wxShareActivity.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_wxSecond_activityId
+  KeyWord:
+  - - jd_wxSecond_activityId
+  Name: 【KR】读秒拼手速
+  OverdueTime: 3600
+  Script: jd_wxSecond.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_wxgame_activityId
+  KeyWord:
+  - - WXGAME_ACT_ID
+  - - jd_wxgame_activityId
+  Name: 【KR】LZ店铺通用游戏任务
+  OverdueTime: 3600
+  Script: jd_wxgame.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_drawCenter_activityId
+  KeyWord:
+  - - jd_drawCenter_activityId
+  Name: 【KR】LZ刮刮乐抽奖
+  OverdueTime: 3600
+  Script: jd_drawCenter.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Disable: 0
+  Env: jinggengInviteJoin
+  KeyWord:
+  - - jinggengInviteJoin
+  Name: 【船长】jinggeng邀请有礼
+  OverdueTime: 3600
+  Script: jd_jinggengInvite.py
+  TimeOut: 0
+  Wait: 3
+- Container:
+  - []
+  Disable: 0
+  Env: jd_shopCollectGiftId
+  KeyWord:
+  - - jd_shopCollectGiftId
+  Name: 【船长】一键领取京豆
+  OverdueTime: 3600
+  Script: jd_shopCollectGift.py
+  TimeOut: 0
+  Wait: 3
+- Container:
+  - []
+  Disable: 0
+  Env: jd_wxCompleteInfoId
+  KeyWord:
+  - - jd_wxCompleteInfoId
+  Name: 【船长】完善信息有礼
+  OverdueTime: 3600
+  Script: jd_wxCompleteInfo.py
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Disable: 1
+  Env: jd_inv_authorCode
+  KeyWord:
+  - - yhyauthorCode
+  - - jd_inv_authorCode
+  - - prodevactCode
+  - - prodev_code
+  Name: 【船长】邀请好友赢大礼
+  OverdueTime: 3600
+  Script: jd_inviteFriendsGift.py
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Disable: 0
+  Env: jd_wxShopGiftId
+  KeyWord:
+  - - jd_wxShopGiftId
+  - - jd_wxShopGift_activityUrl
+  Name: 【船长】店铺特效关注有礼
+  OverdueTime: 3600
+  RegularRules: '@[\d|a-z]{32}@0'
+  Script: HarbourJ_HarbourToulu_main/jd_wxShopGift.py
+  TimeOut: 0
+  Wait: 3
+- Container:
+  - []
+  Disable: 0
+  Env: DPCJID
+  KeyWord:
+  - - DPCJID
+  Name: 【船长】店铺抽奖
+  OverdueTime: 3600
+  Script: HarbourJ_HarbourToulu_main/jd_dpcj.py
+  TimeOut: 0
+  Wait: 3
+- Container:
+  - []
+  Disable: 0
+  Env: jd_lzkjInteractId
+  KeyWord:
+  - - jd_lzkjInteractId
+  Name: 【船长】jd_lzkjInteract邀请有礼
+  OverdueTime: 3600
+  Script: HarbourJ_HarbourToulu_main/jd_lzkjInteract.py
+  TimeOut: 0
+  Wait: 3
+- Container:
+  - []
+  Disable: 0
+  Env: jd_shopFollowGiftId
+  KeyWord:
+  - - jd_shopFollowGiftId
+  Name: 【船长】关注有礼
+  OverdueTime: 3600
+  Script: HarbourJ_HarbourToulu_main/jd_shopFollowGift.py
+  TimeOut: 0
+  Wait: 3
+- Container:
+  - []
+  Disable: 0
+  Env: jd_cjwxShopFollowActivity_activityId
+  KeyWord:
+  - - jd_cjwxShopFollowActivity_activityId
+  - - jd_wxShopFollowActivity_activityUrl
+  Name: 【KR】CJ关注店铺有礼
+  OverdueTime: 3600
+  RegularRules: cjhy@[\d|a-z]{32}@0
+  Script: KingRan_KR/jd_cjwxShopFollowActivity.js
+  TimeOut: 0
+  Wait: 3
+- Container:
+  - []
+  Disable: 1
+  Env: jd_wxKnowledgeActivity_activityUrl
+  KeyWord:
+  - - jd_wxKnowledgeActivity_activityUrl
+  Name: 【KR】知识超人
+  OverdueTime: 3600
+  Script: KingRan_KR/jd_wxKnowledgeActivity.js
+  TimeOut: 0
+  Wait: 3
+- Container:
+  - []
+  Disable: 0
+  Env: jd_wxMcLevelAndBirthGifts_activityId
+  KeyWord:
+  - - jd_wxMcLevelAndBirthGifts_activityId
+  - - jd_wxBirthGiftsId
+  Name: 【KR】生日礼包和会员等级礼包
+  OverdueTime: 3600
+  Script: KingRan_KR/jd_wxMcLevelAndBirthGifts.js
+  TimeOut: 0
+  Wait: 3
+- Container:
+  - []
+  Disable: 0
+  Env: jd_categoryUnion_activityId
+  KeyWord:
+  - - jd_categoryUnion_activityId
+  Name: 【KR】品类联合任务
+  OverdueTime: 3600
+  Script: KingRan_KR/jd_categoryUnion.js
+  TimeOut: 0
+  Wait: 3
+- Container:
+  - []
+  Disable: 0
+  Env: jd_categoryUnion_activityId
+  KeyWord:
+  - - jd_categoryUnion_activityId
+  Name: 【KR】品类联合抽奖
+  OverdueTime: 3600
+  Script: KingRan_KR/jd_categoryUnion_draw.js
+  TimeOut: 0
+  Wait: 3
+- Container:
+  - []
+  Disable: 1
+  Env: jd_wxShopGift_activityUrl
+  KeyWord:
+  - - jd_wxShopGift_activityUrl
+  Name: 【KR】店铺特效关注
+  OverdueTime: 3600
+  Script: KingRan_KR/jd_wxShopGift.js
+  TimeOut: 0
+  Wait: 3
+- Container:
+  - []
+  Disable: 0
+  Env: jd_cjdaily_activityId
+  KeyWord:
+  - - jd_cjdaily_activityId
+  Name: 【KR】CJ每日抢好礼通用活动
+  OverdueTime: 3600
+  Script: KingRan_KR/jd_cjdaily.js
+  TimeOut: 0
+  Wait: 3
+- Container:
+  - []
+  Disable: 0
+  Env: jd_daily_activityId
+  KeyWord:
+  - - jd_daily_activityId
+  Name: 【KR】LZ每日抢好礼通用活动
+  OverdueTime: 3600
+  Script: KingRan_KR/jd_daily.js
+  TimeOut: 0
+  Wait: 3
+- Container:
+  - []
+  Disable: 0
+  Env: jd_lottery_activityUrl
+  KeyWord:
+  - - jd_lottery_activityUrl
+  Name: 【KR】收藏大师-幸运抽奖
+  OverdueTime: 300
+  Script: KingRan_KR/jd_txzj_lottery.js
+  TimeOut: 0
+  Wait: 3
+- Container:
+  - []
+  Disable: 1
+  Env: DPQDTK
+  KeyWord:
+  - - DPQDTK
+  Name: 【KR】店铺签到
+  OverdueTime: 300
+  Script: KingRan_KR/jd_dpqd.js
+  TimeOut: 0
+  Wait: 3
+- Container:
+  - []
+  Disable: 0
+  Env: jd_collect_item_activityUrl
+  KeyWord:
+  - - jd_collect_item_activityUrl
+  Name: 【KR】收藏大师-关注有礼
+  OverdueTime: 300
+  Script: KingRan_KR/jd_txzj_collect_item.js
+  TimeOut: 0
+  Wait: 3
+- Container:
+  - []
+  Disable: 0
+  Env: jd_cart_item_activityUrl
+  KeyWord:
+  - - jd_cart_item_activityUrl
+  Name: 【KR】收藏大师-加购有礼
+  OverdueTime: 300
+  Script: KingRan_KR/jd_txzj_cart_item.js
+  TimeOut: 0
+  Wait: 3
+- Container:
+  - []
+  Disable: 0
+  Env: jd_collect_shop_activityUrl
+  KeyWord:
+  - - jd_collect_shop_activityUrl
+  Name: 【KR】收藏大师-关注商品
+  OverdueTime: 300
+  Script: KingRan_KR/jd_txzj_collect_shop.js
+  TimeOut: 0
+  Wait: 3
+- Container:
+  - []
+  Disable: 0
+  Env: DPLHTY
+  KeyWord:
+  - - DPLHTY
+  - - export DPLHTY
+  Name: 【KR】大牌联合通用开卡
+  OverdueTime: 300
+  Script: KingRan_KR/jd_opencardDPLHTY.js
+  TimeOut: 0
+  Wait: 3
+- Container:
+  - []
+  Disable: 0
+  Env: jd_lzkj_loreal_invite_url
+  KeyWord:
+  - - jd_lzkj_loreal_invite_url
+  - - export jd_lzkj_loreal_invite_url
+  Name: 【KR】邀请入会有礼（lzkj_loreal）
+  OverdueTime: 300
+  Script: KingRan_KR/jd_lzkj_loreal_invite.js
+  TimeOut: 0
+  Wait: 3
+- Container:
+  - []
+  Disable: 0
+  Env: jd_showInviteJoin_activityUrl
+  KeyWord:
+  - - jd_showInviteJoin_activityUrl
+  Name: 【KR】邀请入会赢好礼 · 京耕
+  OverdueTime: 3600
+  Script: KingRan_KR/jd_jinggeng_showInviteJoin.js
+  TimeOut: 0
+  Wait: 3
+- Container:
+  - []
+  Disable: 0
+  Env: jd_shopDraw_activityUrl
+  KeyWord:
+  - - jd_shopDraw_activityUrl
+  Name: 【KR】店铺左侧刮刮乐
+  OverdueTime: 3600
+  Script: KingRan_KR/jd_shopDraw.js
+  TimeOut: 0
+  Wait: 3
