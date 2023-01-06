@@ -50,7 +50,6 @@ js_config:
   Wait: 5 
 - Container:
   - []
-  Disable: 1
   Env: jd_wxCartKoi_activityId
   KeyWord:
   - - jd_wxCartKoi_activityId
@@ -71,7 +70,6 @@ js_config:
   Wait: 2
 - Container:
   - []
-  Disable: 1
   Env: jd_wxCollectCard_activityId
   KeyWord:
   - - jd_wxCollectCard_activityId
@@ -240,7 +238,7 @@ js_config:
   Wait: 3
 - Container:
   - []
-  Disable: 1
+  Disable: 0
   Env: jd_wxKnowledgeActivity_activityUrl
   KeyWord:
   - - jd_wxKnowledgeActivity_activityUrl
@@ -285,7 +283,7 @@ js_config:
   Wait: 3
 - Container:
   - []
-  Disable: 1
+  Disable: 0
   Env: jd_wxShopGift_activityUrl
   KeyWord:
   - - jd_wxShopGift_activityUrl
@@ -329,7 +327,7 @@ js_config:
   Wait: 3
 - Container:
   - []
-  Disable: 1
+  Disable: 0
   Env: DPQDTK
   KeyWord:
   - - DPQDTK
