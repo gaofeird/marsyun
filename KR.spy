@@ -39,6 +39,17 @@ js_config:
   Wait: 5
 - Container:
   - []
+  Env: jd_cjhy_activityId
+  Env: jd_cjhy_activityUrl
+  KeyWord:
+  - - jd_cjhy_activityId
+  - - jd_cjhy_activityUrl
+  Name: 【KR】CJ组队瓜分奖品 · 超级会员
+  Script: jd_cjzdgf.js
+  TimeOut: 0
+  Wait: 5 
+- Container:
+  - []
   Disable: 1
   Env: jd_wxCartKoi_activityId
   KeyWord:
