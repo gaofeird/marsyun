@@ -1,6 +1,44 @@
 js_config:
 - Container:
   - []
+  Env: LUCK_DRAW_URL
+  KeyWord:
+  - - LUCK_DRAW_URL
+  Name: 【KR】店铺抽奖 · 超级无线
+  Script: jd_luck_draw.js
+  TimeOut: 0
+  Wait: 5
+- Container:
+  - []
+  Env: jd_wxBuildActivity_activityId
+  KeyWord:
+  - - jd_wxBuildActivity_activityId
+  Name: 【KR】盖楼有礼 · 超级无线
+  Script: jd_wxBuildActivity.js
+  TimeOut: 0
+  Wait: 5 
+- Container:
+  - []
+  Env: jd_wxCollectionActivity_activityUrl
+  KeyWord:
+  - - jd_wxCollectionActivity_activityUrl
+  Name: 【KR】加购有礼 · 超级无线
+  Script: jd_wxCollectionActivity.js
+  TimeOut: 0
+  Wait: 5 
+- Container:
+  - []
+  Env: jd_completeInfoActivity_activityId
+  Env: jd_completeInfoActivity_venderId
+  KeyWord:
+  - - jd_completeInfoActivity_activityId
+  - - jd_completeInfoActivity_venderId
+  Name: 【KR】完善信息有礼 · 超级会员
+  Script: jd_completeInfoActivity.js
+  TimeOut: 0
+  Wait: 5
+- Container:
+  - []
   Disable: 1
   Env: jd_wxCartKoi_activityId
   KeyWord:
