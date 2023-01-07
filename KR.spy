@@ -1,6 +1,33 @@
 js_config:
 - Container:
   - []
+  Env: jd_lzkj_loreal_followShop_url
+  KeyWord:
+  - - jd_lzkj_loreal_followShop_url
+  Name: 【KR】关注有礼（lzkj_loreal）
+  Script: jd_lzkj_loreal_followShop.js
+  TimeOut: 0
+  Wait: 5
+- Container:
+  - []
+  Env: jd_lzkj_loreal_cart_url
+  KeyWord:
+  - - jd_lzkj_loreal_cart_url
+  Name: 【KR】加购有礼（lzkj_loreal）
+  Script: jd_lzkj_loreal_cart.js
+  TimeOut: 0
+  Wait: 5
+- Container:
+  - []
+  Env: jd_lzkj_loreal_draw_url
+  KeyWord:
+  - - jd_lzkj_loreal_draw_url
+  Name: 【KR】幸运抽奖（lzkj_loreal）
+  Script: jd_lzkj_loreal_draw.js
+  TimeOut: 0
+  Wait: 5  
+- Container:
+  - []
   Env: LUCK_DRAW_URL
   KeyWord:
   - - LUCK_DRAW_URL
