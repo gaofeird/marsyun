@@ -457,9 +457,7 @@ js_config:
   Env: DPQDTK
   KeyWord:
   - - DPQDTK
-  - - jd_shopSign_activityUrl
   Name: 【KR】店铺签到
-  RegularRules: 'lzkj@[\d|a-z]{32}@0'
   OverdueTime: 300
   Script: KingRan_KR/jd_dpqd.js
   TimeOut: 0
