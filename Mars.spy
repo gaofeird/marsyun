@@ -1,6 +1,15 @@
 js_config:
 - Container:
   - []
+  Env: jd_shopFollowGiftId
+  KeyWord:
+  - - jd_shopFollowGiftId
+  Name: 【船长】关注有礼-JK
+  Script: HarbourJ_HarbourToulu_main/jd_shopFollowGift.py
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
   Env: LUCK_DRAW_URL
   KeyWord:
   - - LUCK_DRAW_URL
