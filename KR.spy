@@ -84,10 +84,10 @@ js_config:
   Wait: 2
 - Container:
   - []
-  Env: jd_lzkjInteractId
+  Env: jd_lzkjInteractUrl
   KeyWord:
-  - - jd_lzkjInteractId
-  Name: 【船长】Interact邀请有礼
+  - - jd_lzkjInteractUrl
+  Name: 【船长】jd_lzkjInteract邀请有礼
   Script: HarbourJ_HarbourToulu_main/jd_lzkjInteract.py
   TimeOut: 0
   Wait: 2
