@@ -550,3 +550,14 @@ js_config:
   Script: KingRan_KR/jd_shopDraw.js
   TimeOut: 0
   Wait: 3
+- Container:
+  - []
+  Disable: 0
+  Env: jd_sevenDay_activityUrl
+  KeyWord:
+  - - jd_sevenDay_activityUrl
+  Name: 【KR】超级无线店铺签到监控
+  OverdueTime: 3600
+  Script: KingRan_KR/jd_sevenDayjk.js
+  TimeOut: 0
+  Wait: 3
