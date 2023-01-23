@@ -118,7 +118,6 @@ js_config:
   Env: jd_inv_authorCode
   KeyWord:
   - - jd_inv_authorCode
-  - - yhyauthorCode
   Name: 【船长】邀请赢大礼
   Script: HarbourJ_HarbourToulu_main/jd_inviteFriendsGift.py
   TimeOut: 0
