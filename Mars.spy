@@ -2,6 +2,17 @@ js_config:
 - Container:
   - []
   Disable: 0
+  Env: jd_lzkj_wxCollectionActivityId
+  KeyWord:
+  - - jd_lzkj_wxCollectionActivityId
+  Name: 【环境】lzkj加购物车抽奖
+  OverdueTime: 1800
+  Script: jd_lzkj_wxCollectionActivity.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Disable: 0
   Env: M_WX_LUCK_DRAW_URL
   KeyWord:
   - - M_WX_LUCK_DRAW_URL
