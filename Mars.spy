@@ -2,6 +2,17 @@ js_config:
 - Container:
   - []
   Disable: 0
+  Env: jd_cjhydz_wxTeam_Id
+  KeyWord:
+  - - jd_cjhydz_wxTeam_Id
+  Name: 【环境】cj组队瓜分
+  OverdueTime: 1800
+  Script: jd_cjhydz_wxTeam.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Disable: 0
   Env: jd_lzkj_wxCollectionActivityId
   KeyWord:
   - - jd_lzkj_wxCollectionActivityId
