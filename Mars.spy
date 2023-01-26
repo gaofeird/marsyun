@@ -2,6 +2,17 @@ js_config:
 - Container:
   - []
   Disable: 0
+  Env: jd_cjhy_wxCollectionActivityId
+  KeyWord:
+  - - jd_cjhy_wxCollectionActivityId
+  Name: 【环境】cjhy加购物车抽奖
+  OverdueTime: 1800
+  Script: jd_cjhy_wxCollectionActivity.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Disable: 0
   Env: jd_cjhydz_wxTeam_Id
   KeyWord:
   - - jd_cjhydz_wxTeam_Id
