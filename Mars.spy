@@ -7,7 +7,7 @@ js_config:
   - - jd_lzkj_wxShopFollowActivity_activityId
   Name: 【环境】lzkj关注店铺有礼
   OverdueTime: 1800
-  Script: jd_lzkj_wxShopFollowActivity.js
+  Script: feverrun_my_scripts/jd_lzkj_wxShopFollowActivity.js
   TimeOut: 0
   Wait: 2
 - Container:
@@ -18,7 +18,7 @@ js_config:
   - - jd_cjhy_wxCollectionActivityId
   Name: 【环境】cjhy加购物车抽奖
   OverdueTime: 1800
-  Script: jd_cjhy_wxCollectionActivity.js
+  Script: feverrun_my_scripts/jd_cjhy_wxCollectionActivity.js
   TimeOut: 0
   Wait: 2
 - Container:
@@ -29,7 +29,7 @@ js_config:
   - - jd_cjhydz_wxTeam_Id
   Name: 【环境】cj组队瓜分
   OverdueTime: 1800
-  Script: jd_cjhydz_wxTeam.js
+  Script: feverrun_my_scripts/jd_cjhydz_wxTeam.js
   TimeOut: 0
   Wait: 2
 - Container:
@@ -40,7 +40,7 @@ js_config:
   - - jd_lzkj_wxCollectionActivityId
   Name: 【环境】lzkj加购物车抽奖
   OverdueTime: 1800
-  Script: jd_lzkj_wxCollectionActivity.js
+  Script: feverrun_my_scripts/jd_lzkj_wxCollectionActivity.js
   TimeOut: 0
   Wait: 2
 - Container:
