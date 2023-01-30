@@ -2,6 +2,17 @@ js_config:
 - Container:
   - []
   Disable: 0
+  Env: jd_cjhy_wxShopFollowActivity_activityId
+  KeyWord:
+  - - jd_cjhy_wxShopFollowActivity_activityId
+  Name: 【环境】cjhy关注店铺有礼
+  OverdueTime: 1800
+  Script: feverrun_my_scripts/jd_cjhy_wxShopFollowActivity.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Disable: 0
   Env: jd_lzkj_interactsaas_jgyl_activityId
   KeyWord:
   - - jd_lzkj_interactsaas_jgyl_activityId
