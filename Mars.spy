@@ -56,7 +56,7 @@ js_config:
   Wait: 2
 - Container:
   - []
-  Disable: 0
+  Disable: 1
   Env: M_WX_LUCK_DRAW_URL
   KeyWord:
   - - M_WX_LUCK_DRAW_URL
@@ -67,7 +67,7 @@ js_config:
   Wait: 2
 - Container:
   - []
-  Disable: 0
+  Disable: 1
   Env: M_WX_ADD_CART_URL
   KeyWord:
   - - M_WX_ADD_CART_URL
@@ -78,7 +78,7 @@ js_config:
   Wait: 2
 - Container:
   - []
-  Disable: 0
+  Disable: 1
   Env: M_WX_COLLECT_CARD_URL
   KeyWord:
   - - M_WX_COLLECT_CARD_URL
@@ -89,7 +89,7 @@ js_config:
   Wait: 2
 - Container:
   - []
-  Disable: 0
+  Disable: 1
   Env: M_WX_CENTER_DRAW_URL
   KeyWord:
   - - M_WX_CENTER_DRAW_URL
@@ -100,7 +100,7 @@ js_config:
   Wait: 2
 - Container:
   - []
-  Disable: 0
+  Disable: 1
   Env: M_FAV_SHOP_ARGV
   KeyWord:
   - - M_FAV_SHOP_ARGV
@@ -111,7 +111,7 @@ js_config:
   Wait: 2
 - Container:
   - []
-  Disable: 0
+  Disable: 1
   Env: M_FOLLOW_SHOP_ARGV
   KeyWord:
   - - M_FOLLOW_SHOP_ARGV
@@ -122,6 +122,7 @@ js_config:
   Wait: 2
 - Container:
   - []
+  Disable: 1
   Env: M_WX_SHOP_GIFT_URL
   KeyWord:
   - - M_WX_SHOP_GIFT_URL
@@ -132,6 +133,7 @@ js_config:
   Wait: 2
 - Container:
   - []
+  Disable: 1
   Env: M_WX_FOLLOW_DRAW_URL
   KeyWord:
   - - M_WX_FOLLOW_DRAW_URL
@@ -142,6 +144,7 @@ js_config:
   Wait: 2
 - Container:
   - []
+  Disable: 1
   Env: M_WX_BUILD_DRAW_URL
   KeyWord:
   - - M_WX_BUILD_DRAW_URL
