@@ -4,7 +4,7 @@ js_config:
   Env: jd_lzkjInteractUrl
   KeyWord:
   - - jd_lzkjInteractUrl
-  Name: 【船长】jd_lzkjInteract邀请有礼
+  Name: 【船-长】jd_lzkjInteract邀请有礼
   Script: HarbourJ_HarbourToulu_main/jd_lzkjInteract.py
   TimeOut: 0
   Wait: 2
