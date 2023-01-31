@@ -144,7 +144,7 @@ js_config:
   Wait: 2
 - Container:
   - []
-  Disable: 1
+  Disable: 0
   Env: M_WX_SHOP_GIFT_URL
   KeyWord:
   - - M_WX_SHOP_GIFT_URL
@@ -597,7 +597,7 @@ js_config:
   Wait: 3
 - Container:
   - []
-  Disable: 1
+  Disable: 0
   Env: jd_wxShopGift_activityUrl
   KeyWord:
   - - jd_wxShopGift_activityUrl
