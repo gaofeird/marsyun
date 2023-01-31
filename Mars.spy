@@ -89,7 +89,7 @@ js_config:
   Wait: 2
 - Container:
   - []
-  Disable: 0
+  Disable: 1
   Env: M_WX_ADD_CART_URL
   KeyWord:
   - - M_WX_ADD_CART_URL
@@ -144,7 +144,7 @@ js_config:
   Wait: 2
 - Container:
   - []
-  Disable: 0
+  Disable: 1
   Env: M_WX_SHOP_GIFT_URL
   KeyWord:
   - - M_WX_SHOP_GIFT_URL
