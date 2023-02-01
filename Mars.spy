@@ -78,7 +78,7 @@ js_config:
   Wait: 2
 - Container:
   - []
-  Disable: 1
+  Disable: 0
   Env: M_WX_LUCK_DRAW_URL
   KeyWord:
   - - M_WX_LUCK_DRAW_URL
@@ -89,7 +89,7 @@ js_config:
   Wait: 2
 - Container:
   - []
-  Disable: 1
+  Disable: 0
   Env: M_WX_ADD_CART_URL
   KeyWord:
   - - M_WX_ADD_CART_URL
@@ -323,7 +323,7 @@ js_config:
   Wait: 5  
 - Container:
   - []
-  Disable: 1
+  Disable: 0
   Env: LUCK_DRAW_URL
   KeyWord:
   - - LUCK_DRAW_URL
@@ -342,7 +342,7 @@ js_config:
   Wait: 5 
 - Container:
   - []
-  Disable: 1
+  Disable: 0
   Env: jd_wxCollectionActivity_activityUrl
   KeyWord:
   - - jd_wxCollectionActivity_activityUrl
@@ -393,7 +393,7 @@ js_config:
   Wait: 2
 - Container:
   - []
-  Disable: 1
+  Disable: 0
   Env: jd_wxShopFollowActivity_activityId
   KeyWord:
   - - jd_wxShopFollowActivity_activityId
@@ -539,7 +539,7 @@ js_config:
   Wait: 2
 - Container:
   - []
-  Disable: 1
+  Disable: 0
   Env: jd_cjwxShopFollowActivity_activityId
   KeyWord:
   - - jd_cjwxShopFollowActivity_activityId
