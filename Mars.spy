@@ -473,7 +473,6 @@ js_config:
   Env: yhyauthorCode
   KeyWord:
   - - yhyauthorCode
-  - - jd_inv_authorCode
   - - prodevactCode
   - - prodev_code
   - - jd_invite_id
