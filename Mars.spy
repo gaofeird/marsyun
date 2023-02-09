@@ -2,6 +2,18 @@ js_config:
 - Container:
   - []
   Disable: 0
+  Env: DPLHTY
+  KeyWord:
+  - - DPLHTY
+  - - export DPLHTY
+  Name: 【环境】大牌联合通用开卡
+  OverdueTime: 300
+  Script: feverrun_my_scripts/jd_opencardDPLHTY.js
+  TimeOut: 0
+  Wait: 3
+- Container:
+  - []
+  Disable: 0
   Env: jd_lzkjdz_wxTeam_Id
   KeyWord:
   - - jd_lzkjdz_wxTeam_Id
@@ -680,18 +692,6 @@ js_config:
   Name: 【KR】收藏大师-关注商品
   OverdueTime: 300
   Script: KingRan_KR/jd_txzj_collect_shop.js
-  TimeOut: 0
-  Wait: 3
-- Container:
-  - []
-  Disable: 0
-  Env: DPLHTY
-  KeyWord:
-  - - DPLHTY
-  - - export DPLHTY
-  Name: 【KR】大牌联合通用开卡
-  OverdueTime: 300
-  Script: KingRan_KR/jd_opencardDPLHTY.js
   TimeOut: 0
   Wait: 3
 - Container:
