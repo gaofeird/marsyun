@@ -2,6 +2,17 @@ js_config:
 - Container:
   - []
   Disable: 0
+  Env: jd_cjhydz_microDz_Id
+  KeyWord:
+  - - jd_cjhydz_microDz_Id
+  Name: 【环境】微定制
+  OverdueTime: 300
+  Script: feverrun_my_scripts/jd_cjhydz_microDz.js
+  TimeOut: 0
+  Wait: 3
+- Container:
+  - []
+  Disable: 0
   Env: DPLHTY
   KeyWord:
   - - DPLHTY
