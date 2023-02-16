@@ -24,6 +24,16 @@ def get_router_public_ip():
     ssh.close()
     return router_public_ip
 
+# 重新拨号并获取新的IP地址
+def redial_router():
+    ssh = paramiko.SSHClient()
+    ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+    ssh.connect(router_ip, port=22, username=router_username, password=router_password)
+    ssh.exec_command('ifdown wan && ifup wan')
+    ssh.close()
+    time.sleep(30)  # 等待30秒让路由器重新获取IP地址
+    return get_router_public_ip()
+
 # 处理来自Telegram机器人的消息和指令
 def handle_message(message):
     chat_id = message['chat']['id']
@@ -32,10 +42,24 @@ def handle_message(message):
         if command == '/ip':
             router_public_ip = get_router_public_ip()
             send_telegram_message(chat_id, f'OpenWrt路由器的外网IP地址为: {router_public_ip}')
+        elif command == '/reboot':
+            reboot_router()
+            send_telegram_message(chat_id, 'OpenWrt路由器已重启，请稍候重新连接。')
+        elif command == '/redial':
+            new_router_public_ip = redial_router()
+            send_telegram_message(chat_id, f'OpenWrt路由器的新外网IP地址为: {new_router_public_ip}')
 
 # 发送消息到Telegram机器人
 def send_telegram_message(chat_id, message):
     requests.get(f'https://api.telegram.org/bot{bot_token}/sendMessage?chat_id={chat_id}&text={message}')
+
+# 重启OpenWrt路由器
+def reboot_router():
+    ssh = paramiko.SSHClient()
+    ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+    ssh.connect(router_ip, port=22, username=router_username, password=router_password)
+    ssh.exec_command('reboot')
+    ssh.close()
 
 # 启动Flask Web服务器
 app = Flask(__name__)
@@ -44,18 +68,21 @@ app = Flask(__name__)
 @app.route(f'/{bot_token}', methods=['POST'])
 def handle_webhook_request():
     if request.method == 'POST':
-        update = json.loads(request.data)
+        update = request.get_json()
         if 'message' in update:
-            handle_message(update['message'])
-        return 'OK'
+            message = update['message']
+            handle_message(message)
+        return 'ok'
+
+# 设置Telegram机器人的Webhook地址
+def set_telegram_webhook():
+    cert = 'your-self-signed-certificate.crt'
+    key = 'your-private-key.key'
+    requests.get(f'https://api.telegram.org/bot{bot_token}/deleteWebhook')
+    time.sleep(1)
+    response = requests.post(f'https://api.telegram.org/bot{bot_token}/setWebhook?url={webhook_url}:{webhook_port}/{bot_token}', files={'certificate': open(cert, 'rb')}, data={'url': f'{webhook_url}:{webhook_port}/{bot_token}'})
+    print(response.text)
 
 if __name__ == '__main__':
-    # 设置Webhook
-    webhook_url_full = f'{webhook_url}:{webhook_port}/{bot_token}'
-    webhook_response = requests.post(f'https://api.telegram.org/bot{bot_token}/setWebhook', data={'url': webhook_url_full})
-    if webhook_response.status_code != 200:
-        print(f'Failed to set webhook: {webhook_response.text}')
-        exit(1)
-
-    # 启动Flask Web服务器
-    app.run(host='0.0.0.0', port=webhook_port, ssl_context='adhoc')
+    set_telegram_webhook()
+    app.run(host='0.0.0.0', port=webhook_port, ssl_context=(cert, key))
