@@ -1,8 +1,11 @@
+cert = '/root/your-self-signed-certificate.crt'
+key = '/root/your-private-key.key'
 import requests
 import json
 import time
 import paramiko
 from flask import Flask, request
+from urllib.parse import quote
 
 # 设置Telegram机器人Token
 bot_token = 'your-bot-token'
@@ -36,6 +39,8 @@ def redial_router():
 
 # 处理来自Telegram机器人的消息和指令
 def handle_message(message):
+    print(message)
+#    chat_id = 'your-chat_id'
     chat_id = message['chat']['id']
     if 'text' in message:
         command = message['text']
@@ -48,10 +53,13 @@ def handle_message(message):
         elif command == '/redial':
             new_router_public_ip = redial_router()
             send_telegram_message(chat_id, f'OpenWrt路由器的新外网IP地址为: {new_router_public_ip}')
+            update = request.get_json()
+            print(update)
 
 # 发送消息到Telegram机器人
 def send_telegram_message(chat_id, message):
-    requests.get(f'https://api.telegram.org/bot{bot_token}/sendMessage?chat_id={chat_id}&text={message}')
+#    requests.get(f'https://api.telegram.org/bot{bot_token}/sendMessage?chat_id={chat_id}&text={message}')
+    requests.get(f'https://api.telegram.org/bot{bot_token}/sendMessage?chat_id={chat_id}&text={quote(message)}')
 
 # 重启OpenWrt路由器
 def reboot_router():
@@ -73,14 +81,20 @@ def handle_webhook_request():
             message = update['message']
             handle_message(message)
         return 'ok'
+        update = request.get_json()
+        print(update)
 
 # 设置Telegram机器人的Webhook地址
 def set_telegram_webhook():
-    cert = 'your-self-signed-certificate.crt'
-    key = 'your-private-key.key'
+    cert = '/root/your-self-signed-certificate.crt'
+    key = '/root/your-private-key.key'
     requests.get(f'https://api.telegram.org/bot{bot_token}/deleteWebhook')
     time.sleep(1)
-    response = requests.post(f'https://api.telegram.org/bot{bot_token}/setWebhook?url={webhook_url}:{webhook_port}/{bot_token}', files={'certificate': open(cert, 'rb')}, data={'url': f'{webhook_url}:{webhook_port}/{bot_token}'})
+#    response = requests.post(f'https://api.telegram.org/bot{bot_token}/setWebhook?url={webhook_url}:{webhook_port}/{bot_token}', files={'certificate': open(cert, 'rb')}, data={'url': f'{webhook_url}:{webhook_port}/{bot_token}'})
+    response = requests.post(f'https://api.telegram.org/bot{bot_token}/setWebhook', 
+                         data={'url': f'{webhook_url}:{webhook_port}/{bot_token}'},
+                         files={'certificate': (cert, open(cert, 'rb'), 'application/x-pem-file')})
+
     print(response.text)
 
 if __name__ == '__main__':
