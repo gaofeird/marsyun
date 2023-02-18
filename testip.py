@@ -10,7 +10,7 @@ from urllib.parse import quote
 import re
 
 # 设置Telegram机器人Token
-bot_token = '6131223232:AAEpGKuOD2fbjbrS9y7MA81DY9P0XHQy-0c'
+bot_token = ''
 # 设置OpenWrt路由器的IP地址、用户名和密码
 #router_ip = '192.168.191.182'    
 router_ip = '192.168.191.139'
@@ -18,7 +18,7 @@ router_username = 'root'
 #router_password = 'kqpsc5ePa8HUy3B'    #182password
 router_password = 'YB8YJeNyCUJdHUb'     #139password
 # 设置Webhook的地址和端口号
-webhook_url = 'https://webhook.vpscn.ml'
+webhook_url = 'https://'
 webhook_port = 88
 
 # 获取OpenWrt路由器的外网IP地址
