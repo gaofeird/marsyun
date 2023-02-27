@@ -2,6 +2,17 @@ js_config:
 - Container:
   - []
   Disable: 0
+  Env: jd_lzkj_daily_ids
+  KeyWord:
+  - - jd_lzkj_daily_ids
+  Name: 【环境】lzkj每日抢
+  OverdueTime: 300
+  Script: feverrun_my_scripts/jd_lzkj_daily.js
+  TimeOut: 0
+  Wait: 3
+- Container:
+  - []
+  Disable: 0
   Env: jd_cjhydz_microDz_Id
   KeyWord:
   - - jd_cjhydz_microDz_Id
