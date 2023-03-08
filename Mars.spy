@@ -387,7 +387,6 @@ js_config:
 - Container:
   - []
   Env: jd_completeInfoActivity_activityId
-  Env: jd_completeInfoActivity_venderId
   KeyWord:
   - - jd_completeInfoActivity_activityId
   - - jd_completeInfoActivity_venderId
