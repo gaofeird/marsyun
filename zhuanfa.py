@@ -1,29 +1,29 @@
 # -*- coding: utf-8 -*-
-# µ¼ÈëËùĞè¿â
+# å¯¼å…¥æ‰€éœ€åº“
 from telethon.sync import TelegramClient
 from telethon import events
 
-# ÌîÈëTelegram APIÏà¹ØĞÅÏ¢
-api_id = 19559732
-api_hash = '52a59514d7db9bc29c0c94a6dbc3dbe3'
-source_chat = -1001654299303
-destination_chat = -1001813970852
+# å¡«å…¥Telegram APIç›¸å…³ä¿¡æ¯
+api_id = 19559745
+api_hash = '52a59514d54b9bc29c0c9488dbc3dbe3'
+source_chat = -1001654599303
+destination_chat = -1001866970852
 
-# ´´½¨TelegramClient¶ÔÏó
+# åˆ›å»ºTelegramClientå¯¹è±¡
 client = TelegramClient('zhuanfa', api_id, api_hash)
 
-# ÉèÖÃÒª¼à¿ØµÄ¹Ø¼ü×Ö
+# è®¾ç½®è¦ç›‘æ§çš„å…³é”®å­—
 keywords = ['export', 'keyword2', 'keyword3']
 
-# ¶¨ÒåÏûÏ¢×ª·¢º¯Êı
+# å®šä¹‰æ¶ˆæ¯è½¬å‘å‡½æ•°
 @client.on(events.NewMessage(chats=source_chat))
 async def forward_to_destination(event):
-    # ÅĞ¶ÏÏûÏ¢ÊÇ·ñ°üº¬¹Ø¼ü×Ö
+    # åˆ¤æ–­æ¶ˆæ¯æ˜¯å¦åŒ…å«å…³é”®å­—
     for keyword in keywords:
         if keyword in event.message.message:
-            # ×ª·¢ÏûÏ¢µ½Ä¿±êÈº×é
+            # è½¬å‘æ¶ˆæ¯åˆ°ç›®æ ‡ç¾¤ç»„
             await client.send_message(destination_chat, event.message.message)
 
-# ÔËĞĞTelegramClient
+# è¿è¡ŒTelegramClient
 client.start()
 client.run_until_disconnected()
