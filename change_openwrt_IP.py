@@ -10,7 +10,7 @@ from time import sleep
 
 
 # 设置Telegram机器人Token
-bot_token = '6131223232:AAEpGKuOD2fbjbrS9y7MA81DY9P0XHQy-0c'
+bot_token = '6131223232:AAEpGKuOD2fbj23S9y7MA81DY9P0XHQy-0c'
 
 # 设置OpenWrt路由器的IP地址、用户名和密码
 router_ip = '192.168.191.182'
